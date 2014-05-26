@@ -3,6 +3,7 @@ module Palindrome
 
   def palindrome?(str)
     str = str.downcase.gsub(/(\W|\d)/, "")
-    str.gsub(str.reverse, "true").include?("true")
+    str == str.reverse
   end
+
 end
